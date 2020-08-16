@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Whatsapp message script</title>
+    <link rel="stylesheet" href="dist/css/styles.css">
+    <script src="dist/js/whatsapp-message-script.js"></script>
+</head>
+<body class="bg-gray-300">
+<div class="container">
+    <div class="text-center pt-8 pb-8">
+        <h1 class="text-4xl text-green-600 font-bold">WHATSAPP MESSAGE SCRIPT</h1>
+    </div>
+    <div class="w-full flex justify-center">
+        <div class="w-full md:w-1/2 p-4 bg-green-600">
+            <div class="text-center py-4">
+                <div class="pb-2">
+                    <label for="wms-cellphone" class="text-white text-xl">Digita el teléfono celular al que deseas enviar un mensaje</label>
+                </div>
+                <input type="text" id="wms-cellphone" placeholder="Número de teléfono" class="rounded text-2xl text-center w-3/4 p-1">
+                <p id="wms-cellphone-error" style="display: none">Por favor digita un número de teléfono</p>
+            </div>
+            <div class="text-center py-4">
+                <div class="pb-2">
+                    <label for="wms-message" class="text-white text-xl">Escribe un mensaje</label>
+                </div>
+                <textarea name="wms-message" id="wms-message" class="rounded text-2xl text-center w-3/4 p-1" placeholder="Mensaje"></textarea>
+                <p id="wms-message-error" style="display: none">Por favor digita un mensaje</p>
+            </div>
+            <div class="text-center py-4">
+                <button onclick="wms_open_link()" class="rounded text-2xl text-center text-white w-3/4 p-1 bg-green-900 hover:bg-gray-800">Enviar</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
